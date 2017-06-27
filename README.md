@@ -17,7 +17,7 @@ The second page is named "Garden". People can search the articles about the plan
 Account 
 
 The third interface is called "Account". It is a personal space. There are three icons designed for three functions. The first icon contains a timeline to show the history of people’s plants with the images. The second icon works for demonstrating the information of the plant. The last icon is used for recording the history of indexes.
-![ScreenShot](https://{/Users/grace/Desktop/GardenSpace/screenshots/account.png})
+![alt text](https://github.com/gracechanggao/GardenSpace/tree/master/screenshots/3.png)
 
 
 
