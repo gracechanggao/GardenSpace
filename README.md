@@ -12,7 +12,7 @@ Dashboard
 
 The first page is called "Dashboard". It is responsible for the reminder the client to take care of the plants and demonstrating the states of the plants. "To do List" alerts users to look after their plants. There are four hidden images below the "Current Situation" to demonstrate the states. The states include the temperature/ humidity, moisture and light of the plant. In additional, the hidden images are real-time updated and detecting by the sensors around the plant.
 
-![Dashboard][https://github.com/gracechanggao/GardenSpace/blob/master/screenshots/Dashboard.png)
+![Dashboard](https://github.com/gracechanggao/GardenSpace/blob/master/screenshots/Dashboard.png)
 
 Garden
 
