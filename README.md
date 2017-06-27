@@ -3,7 +3,9 @@
 ## Table of content
 
 - Screenshots
+- Description
 - Set-up
+
 
 ## Screenshots
 Dashboard
@@ -20,10 +22,21 @@ The third interface is called "Account". It is a personal space. There are three
 
 ![Account](GardenSpace/screenshots/3.png)
 
+## Description
+
+### What is GardenSpace? 
+GardenSpace is an IoT product. To be more specific, it is using the power of technology to help people growing plants in their home.People can make an order online and make a request about the size then GardenSpace would deliver one box to their home. The box includes the plants, faculties and the soil. After users receiving plants, GardenSpace provides the 24 hours monitoring of the plants to make sure users can obtain the notifications when their plants need help. The image on the right hand is showing the working process of GardenSpace
+
+### What I have done?  
+
+I use Ionic to create the smartphone application and develop the basic interfaces of the smartphone application. At the current stage, the application contains five interfaces:“Login”,“Register”, “Dashboard”, “Garden”and “Account”.  There are different functions inside each interface. Some functions in the software are not completed working because lacking support from the database. At last, I manually tested all the functions in the application to make sure every function was working correctly.
+
 ## Set-up
 
-1. Install Inoic 
+1. Install Inoic  
+
 npm install -g cordova ionic  
+The deatil could following next link.  
 
 https://ionicframework.com/getting-started  
 
