@@ -12,15 +12,18 @@ Dashboard
 
 The first page is called "Dashboard". It is responsible for the reminder the client to take care of the plants and demonstrating the states of the plants. "To do List" alerts users to look after their plants. There are four hidden images below the "Current Situation" to demonstrate the states. The states include the temperature/ humidity, moisture and light of the plant. In additional, the hidden images are real-time updated and detecting by the sensors around the plant.
 
+![https://github.com/gracechanggao/GardenSpace/blob/master/screenshots/Dashboard.png)
+
 Garden
 
 The second page is named "Garden". People can search the articles about the plants and GardenSpace. In additional, people can share, comment and like the article if they are interested in the article.
+![Garden](https://github.com/gracechanggao/GardenSpace/blob/master/screenshots/Garden.png)
 
 Account 
 
 The third interface is called "Account". It is a personal space. There are three icons designed for three functions. The first icon contains a timeline to show the history of people’s plants with the images. The second icon works for demonstrating the information of the plant. The last icon is used for recording the history of indexes.
 
-![Account](GardenSpace/screenshots/3.png)
+![Account](https://github.com/gracechanggao/GardenSpace/blob/master/screenshots/3.png)
 
 ## Description
 
@@ -31,7 +34,7 @@ GardenSpace is an IoT product. To be more specific, it is using the power of tec
 
 I use Ionic to create the smartphone application and develop the basic interfaces of the smartphone application. At the current stage, the application contains five interfaces:“Login”,“Register”, “Dashboard”, “Garden”and “Account”.  There are different functions inside each interface. Some functions in the software are not completed working because lacking support from the database. At last, I manually tested all the functions in the application to make sure every function was working correctly.
 
-## Set-up
+## Set-up  
 
 1. Install Inoic  
 
@@ -43,6 +46,6 @@ https://ionicframework.com/getting-started
 
 2.Download GardenSpace in git  
 
-cd myApp  
+cd GardenSpace  
 
 ionic serve
