@@ -17,17 +17,19 @@ The second page is named "Garden". People can search the articles about the plan
 Account 
 
 The third interface is called "Account". It is a personal space. There are three icons designed for three functions. The first icon contains a timeline to show the history of people’s plants with the images. The second icon works for demonstrating the information of the plant. The last icon is used for recording the history of indexes.
-![alt text](https://github.com/gracechanggao/GardenSpace/tree/master/screenshots/3.png)
 
-
-
+![Account](GardenSpace/screenshots/3.png)
 
 ## Set-up
 
 1. Install Inoic 
-npm install -g cordova ionic
-https://ionicframework.com/getting-started
+npm install -g cordova ionic  
 
-2.Download GardenSpace in git
-cd myApp
+https://ionicframework.com/getting-started  
+
+
+2.Download GardenSpace in git  
+
+cd myApp  
+
 ionic serve
