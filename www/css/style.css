@@ -47,3 +47,164 @@
 .scroll {
   height: 100%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$dark: #222 !default;
+$gray: lighten($dark, 5%) !default;
+
+$lightGreen: RGBA(91, 193, 158, 0.75);
+$green: RGBA(0, 178, 133, 0.75);
+$lightBlue: RGBA(133, 188, 231, 0.75);
+$blue: RGBA(90, 172, 223, 0.75);
+$lightOrange: RGBA(232, 142, 77, 1);
+$orange: RGBA(224, 111, 29, 1);
+$lightPurple: RGBA(129, 89, 135, 1);
+$purple: RGBA(99, 46, 111, 1);
+
+body {
+  cursor: url('http://ionicframework.com/img/finger.png'), auto;
+}
+
+.pane-has-bg {
+  position: relative;
+  &:after {
+    content : "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000;
+    //background-image: url('https://lh5.ggpht.com/X6S-3G1irwe649hOPWe2GYqcl4eSxK69r6Y1CGoC9oXk45MRwTTywpz0vdVoQS0_vVVX=h600');
+    width: 100%;
+    height: 100%;
+    opacity : 0.9;
+    z-index: -1;
+  }
+  .pane-content {
+    position: fixed;
+    overflow: hidden;
+    margin: auto !important;
+    top: 60px !important;
+    bottom: 0 !important;
+  }
+  /*.scroll-content {
+    display: table;
+    height: 100%;
+    width: 100%;
+  }
+  .scroll {
+    display: table-cell;
+    vertical-align: middle;
+  }*/
+}
+
+.list {
+  &.item-dash {
+    .title {
+      color: #fff;
+      border: 0;
+      position: relative;
+      padding: 10px 15px;
+      &.dark {
+        background-color: $gray;
+      }
+      &.green {
+        background-color: $lightGreen;
+      }
+      &.blue {
+        background-color: $lightBlue;
+      }
+      &.orange {
+        background-color: $lightOrange;
+      }
+      &.purple {
+        background-color: $lightPurple;
+      }
+    }
+    .content {
+      border: 0;
+      color: #fff;
+      padding: 10px 15px;
+      .icon {
+        color: rgba(255, 255, 255, 0.3);
+        font-size: 400%;
+      }
+      &.dark {
+        background-color: $dark;
+      }
+      &.green {
+        background-color: $green;
+      }
+      &.blue {
+        background-color: $blue;
+      }
+      &.orange {
+        background-color: $orange;
+      }
+      &.purple {
+        background-color: $purple;
+      }
+      h1 {
+        color: #fff;
+        font-weight: 700;
+        margin: 0; line-height: 1;
+      }
+      p {
+        color: #ccc;
+        font-size: 90%;
+      }
+    }
+    .graph {
+      border: 0;
+      text-align: center;
+      padding: 10px;
+      color: #fff;
+      border-bottom: 3px solid rgba(255,255,255, 0.75);
+      &.dark {
+        background-color: $gray;
+      }
+      &.green {
+        background-color: $lightGreen;
+      }
+      &.blue {
+        background-color: $lightBlue;
+      }
+      &.orange {
+        background-color: $lightOrange;
+      }
+      &.purple {
+        background-color: $lightPurple;
+      }
+    }
+    .footer {
+      border: 0;
+      padding: 8px;
+      background-color: #999;
+    }
+  }
+}
+
+.liquidFillGaugeText { font-size: 95%; font-weight: bold; }
+
+(function (ChartJsProvider) {
+  ChartJsProvider.setOptions({ colors : [ '#803690', '#00ADF9', '#DCDCDC', '#46BFBD', '#FDB45C', '#949FB1', '#4D5360'] });
+});

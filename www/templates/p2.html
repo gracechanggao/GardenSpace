@@ -6,9 +6,164 @@
 
 </head>
 <body>
-<div class="att-m2x-widget" data-widget-url="https://api-m2x.att.com/v2/widgets/aab9cdf8" data-m2x-key="35b21968dbb350c1e92da0c119495491" ; style="position:absolute; left:500px; top:100px; "></div>
+<!--<div class="att-m2x-widget" data-widget-url="https://api-m2x.att.com/v2/widgets/aab9cdf8" data-m2x-key="35b21968dbb350c1e92da0c119495491" ; style="position:absolute; left:500px; top:100px; "></div>-->
+<div class="att-m2x-widget" data-widget-url="https://api-m2x.att.com/v2/widgets/aab9cdf8" data-m2x-key="35b21968dbb350c1e92da0c119495491" ; ></div>
 
 <script src="https://m2x.att.com/widgets.js" async></script>
 
 </body>
 </html>
+
+
+
+
+<!--<html lang="en">-->
+<!--<head>-->
+  <!--<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>-->
+  <!--<script type="text/javascript">-->
+
+
+    <!--&lt;!&ndash;<link href="lib/ionic/css/ionic.css" rel="stylesheet">&ndash;&gt;-->
+    <!--&lt;!&ndash;<link rel="stylesheet" href="lib/angular-chart.js/dist/angular-chart.css">&ndash;&gt;-->
+    <!--&lt;!&ndash;<link href="css/style.css" rel="stylesheet">&ndash;&gt;-->
+      <!--var temp,hum,moi1,moi2,light;-->
+      <!--google.charts.load('current', {'packages':['gauge']});-->
+      <!--google.charts.setOnLoadCallback(drawChart);-->
+      <!--function drawChart() {-->
+          <!--&lt;!&ndash;temp = parseInt({{plant_data[0].temp}});&ndash;&gt;-->
+          <!--&lt;!&ndash;hum = {{plant_data[0].moist1}}toString();&ndash;&gt;-->
+          <!--&lt;!&ndash;moi1 =  {{plant_data[0].moist2}}.toString();&ndash;&gt;-->
+          <!--&lt;!&ndash;moi2 = {{plant_data[0].hum}}.toString();&ndash;&gt;-->
+          <!--&lt;!&ndash;light = {{plant_data[0].light}.toString();&ndash;&gt;-->
+
+
+
+        <!--var data = google.visualization.arrayToDataTable([-->
+          <!--['Label', 'Value'],-->
+          <!--['Memory', 0],-->
+          <!--['CPU', 0],-->
+          <!--['Network', 0],-->
+          <!--['Network', 0],-->
+          <!--['Network', 0]-->
+        <!--]);-->
+
+
+
+
+        <!--var options = {-->
+          <!--width: 400, height: 120,-->
+          <!--redFrom: 90, redTo: 100,-->
+          <!--yellowFrom:75, yellowTo: 90,-->
+          <!--minorTicks: 5-->
+        <!--};-->
+
+        <!--var chart = new google.visualization.Gauge(document.getElementById('chart_div'));-->
+
+        <!--chart.draw(data, options);-->
+        <!--setInterval(function() {-->
+          <!--data.setValue(0, 1, "plant_data[0].temp");-->
+          <!--chart.draw(data, options);-->
+        <!--}, 13000);-->
+        <!--setInterval(function() {-->
+          <!--data.setValue(1, 1, plant_data[0].moist1);-->
+          <!--chart.draw(data, options);-->
+        <!--}, 5000);-->
+        <!--setInterval(function() {-->
+          <!--data.setValue(2, 1, plant_data[0].moist2);-->
+          <!--chart.draw(data, options);-->
+        <!--}, 26000);-->
+
+         <!--setInterval(function() {-->
+          <!--data.setValue(2, 1, plant_data[0].hum);-->
+          <!--chart.draw(data, options);-->
+        <!--}, 26000);-->
+
+         <!--setInterval(function() {-->
+          <!--data.setValue(2, 1, plant_data[0].light);-->
+          <!--chart.draw(data, options);-->
+        <!--}, 26000);-->
+      <!--}-->
+    <!--</script>-->
+<!--</head>-->
+<!--<body>-->
+<!--<div id="chart_div" style="width: 400px; height: 120px;"></div>-->
+<!--</body>-->
+
+<!--</html>-->
+
+
+
+
+
+
+<!--<html lang="en">-->
+<!--<head>-->
+  <!--<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>-->
+  <!--<script type="text/javascript">-->
+      <!--google.charts.load('current', {'packages':['gauge']});-->
+      <!--google.charts.setOnLoadCallback(drawChart);-->
+<!--function drawChart() {-->
+
+
+          <!--temp = {{plant_data[0].temp}}.toString();-->
+           <!--hum = {{plant_data[0].moist1}}toString();-->
+           <!--moi1 =  {{plant_data[0].moist2}}.toString();-->
+           <!--moi2 = {{plant_data[0].hum}}.toString();-->
+           <!--light = {{plant_data[0].light}.toString();-->
+
+
+
+
+        <!--var data = google.visualization.arrayToDataTable([-->
+          <!--['Label', 'Value'],-->
+          <!--['Temp', 80],-->
+          <!--['Hum', 55],-->
+          <!--['Moi1', 68],-->
+          <!--['Moi2', 68],-->
+          <!--['Light', 68]-->
+        <!--]);-->
+
+        <!--var options = {-->
+          <!--width: 400, height: 120,-->
+          <!--redFrom: 90, redTo: 100,-->
+          <!--yellowFrom:75, yellowTo: 90,-->
+          <!--minorTicks: 5-->
+        <!--};-->
+
+        <!--var chart = new google.visualization.Gauge(document.getElementById('chart_div'));-->
+
+        <!--chart.draw(data, options);-->
+
+
+
+        <!--setInterval(function() {-->
+          <!--data.setValue(0, 1, parseFloat(temp);-->
+          <!--chart.draw(data, options);-->
+        <!--}, 13000);-->
+        <!--setInterval(function() {-->
+          <!--data.setValue(1, 1,  parseFloat(hum) );-->
+          <!--chart.draw(data, options);-->
+        <!--}, 5000);-->
+        <!--setInterval(function() {-->
+          <!--data.setValue(2, 1,  parseFloat(moi1));-->
+          <!--chart.draw(data, options);-->
+        <!--}, 26000);-->
+
+         <!--setInterval(function() {-->
+          <!--data.setValue(3, 1,   parseFloat(moi2) };-->
+          <!--chart.draw(data, options);-->
+        <!--}, 26000);-->
+
+         <!--setInterval(function() {-->
+          <!--data.setValue(4, 1,   parseFloat(light) };-->
+          <!--chart.draw(data, options);-->
+        <!--}, 26000);-->
+
+      <!--}-->
+    <!--</script>-->
+<!--</head>-->
+<!--<body>-->
+<!--<div id="chart_div" style="width: 400px; height: 120px;"></div>-->
+<!--</body>-->
+
+<!--</html>-->

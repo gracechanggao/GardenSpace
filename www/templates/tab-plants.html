@@ -1,0 +1,100 @@
+
+
+
+
+<ion-view view-title="Plant's Index">
+
+
+
+
+
+
+
+  <ion-content >
+    <div class="card">
+      <div class="item item-divider">
+        Moisture : {{plant_data[0].moist1}} & {{plant_data[0].moist2}}
+      </div>
+      <div class="item item-text-wrap">
+        <canvas id="mo" class="chart-horizontal-bar"
+                chart-data="moist" chart-labels="labelsmoist" >
+        </canvas> </div>
+    </div>
+
+  <div class="card">
+  <div class="item item-divider">
+  Temperature : {{plant_data[0].temp}}
+  </div>
+  <div class="item item-text-wrap">
+    <canvas id="bar" class="chart chart-bar"
+            chart-data="data" chart-labels="labels" chart-options="options">
+    </canvas>  </div>
+  </div>
+
+
+
+
+
+    <div class="card">
+      <div class="item item-divider">
+        Light : {{plant_data[0].light}}
+      </div>
+      <div class="item item-text-wrap">
+        <canvas id="pie" class="chart chart-bar"
+                chart-data="light" chart-labels="labelslight" chart-options="options">
+        </canvas>  </div>
+    </div>
+
+    <div class="card">
+      <div class="item item-divider">
+        Humidity : {{plant_data[0].hum}}
+      </div>
+      <div class="item item-text-wrap">
+        <canvas id="hum" class="chart chart-horizontal-bar"
+                chart-data="hum" chart-labels="labelshum" >
+        </canvas> </div>
+    </div>
+
+
+
+
+
+
+
+
+  <!--<div class="row">-->
+      <!--<div class="col">-->
+        <!--<ion-list class="list item-dash">-->
+          <!--<ion-item class="title orange">Stand Meter</ion-item>-->
+          <!--<ion-item class="content orange text-right item-icon-left">-->
+            <!--<i class="icon ion-ios-compose"></i>-->
+            <!--<h1> {{plant_data[0].temp}}</h1>-->
+
+           <!---->
+              <!--<div class="item item-divider">-->
+                <!--Temperature chart-->
+              <!--</div>-->
+              <!--<div class="item item-text-wrap">-->
+                <!--<canvas id="bar" class="chart chart-bar"-->
+                        <!--chart-data="data" chart-labels="labels" chart-options="options">-->
+                <!--</canvas>  </div>-->
+
+
+
+          <!--</ion-item>-->
+          <!--<ion-item class="graph orange"><svg id="fillgauge5" width="75" height="75" </svg></ion-item>-->
+          <!--<ion-item class="footer"></ion-item>-->
+        <!--</ion-list>-->
+    <!--</div>-->
+    <!--</div>-->
+
+
+
+  </ion-content>
+
+
+
+</ion-view>
+
+
+

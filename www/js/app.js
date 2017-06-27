@@ -92,8 +92,7 @@
 
 
 
-
-angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
+angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', 'chart.js'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -113,11 +112,11 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
 
   $stateProvider
-//      .state('login',{
-//            url:'/login',
-//            templateUrl:'templates/login.html',
-//            controller:'LoginCtrl'
-//     });
+      .state('login',{
+            url:'/login',
+            templateUrl:'templates/login.html',
+            controller:'LoginCtrl'
+     })
 
 
 
@@ -139,6 +138,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         }
       })
 
+      .state('p1', {
+        url: '/p1',
+        views: {
+          'p1': {
+            templateUrl: 'templates/p1.html',
+            controller: 'P1Ctrl'
+          }
+        }
+      })
+
       .state('tab.garden', {
           url: '/garden',
           views: {
@@ -147,6 +156,28 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
               controller: 'GardenCtrl'
             }
           }
+        })
+
+
+
+
+      .state('tab.plants', {
+         url: '/plants',
+         views: {
+           'tab-plants': {
+             templateUrl: 'templates/tab-plants.html',
+              controller: 'PlantsCtrl'
+            }
+          }
+        })
+       .state('tab.plants-detail', {
+          url: '/plants/:plantId',
+         views: {
+           'tab-plants': {
+              templateUrl: 'templates/plants-detail.html',
+             controller: 'PlantsDetailCtrl'
+            }
+         }
         })
 
 

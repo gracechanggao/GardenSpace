@@ -1,74 +1,78 @@
-<!--<script id="templates/tab-dash.html" type="text/ng-template">-->
-
-<ion-view view-title="Welcome">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
 
 
+<ion-view >
 
-<body ng-controller="MainCtrl">
+  <ion-content has-header="true" padding="true" >
 
-  <ion-content header-shrink scroll-event-interval="5">
-    <div style="height: 64px;"></div>
+    <div class="bar bar-header">
+      <button class="button button-icon icon ion-navicon" ></button>
 
-
-<ion-side-menus>
-
-
+    </div>
 
 
+    <div class="list card">
 
-  <ion-side-menu-content>
+      <div class="card">
 
-    <ion-content class="padding">
+        <div class="bar bar-header">
+          <div class="h1 title">To do List</div>
+          <button class="button button-clear button-positive ion-plus-round"></button>
+        </div>
+
+      </div>
+
+
+      <div class="card">
+
+
+        <div class="item item-text-wrap">
+          <i class="icon ion-clock"></i>
+
+          It is remaining 50 mins to water your plant
+        </div>
+
+      </div>
+
+
+
+
+
+
+
+
+      <div class="card">
+
+
+          <!--var AWS = require('aws-sdk');-->
+          <!--AWS.config.update({region: 'us-west-1', credentials: {YOUR_CREDENTIALS}});-->
+
+          <!--var s3 = new AWS.S3({apiVersion: '2006-03-01'});-->
+          <!--<script src="https://sdk.amazonaws.com/js/aws-sdk-2.6.10.min.js"></script>-->
+
+
+
+
+      </div>
+
+
+      <div class="card">
+
+        <div class="item item-text-wrap">
+          <i class="icon ion-clock"></i>
+
+          It is remaining 50 mins to fertilize your plant
+        </div>
+      </div>
+
       <!--<img src="img/logo.png">-->
 
+    </div>
 
 
-
-      <!--<div class="bar bar-header">-->
-        <!--<button class="button button-icon icon ion-navicon"></button>-->
-        <!--<div class="h1 title">Header Buttons</div>-->
-        <!--<button class="button button-clear button-positive">Edit</button>-->
-      <!--</div>-->
-
-
-      <!---->
-
-      <div class="list card">
-
-        <div class="card">
-        <div class="bar bar-header">
-        <!--<button class="button button-icon icon ion-navicon"></button>-->
-        <div class="h1 title">To do List</div>
-        <button class="button button-clear button-positive ion-plus-round"></button>
-        </div>
-
-        </div>
-
-        <div class="card">
-
-
-          <div class="item item-text-wrap">
-            <i class="icon ion-clock" ></i>
-
-            It is remaining 50 mins to water your plant
-          </div>
-
-        </div>
-
-
-        <div class="card">
-
-          <div class="item item-text-wrap">
-            <i class="icon ion-clock" ></i>
-
-            It is remaining 50 mins to fertilize your plant
-          </div>
-        </div>
-
+    <ion-list>
+      <div class="item item-divider">
+        Current Situation:
+        <i class="icon ion-android-happy"></i>
 
       </div>
 
@@ -83,188 +87,50 @@
 
 
 
+      <a class="item item-icon-left item-icon-right" href="templates/p1.html">
+        <i class="icon ion-thermometer"></i>
 
+        Temp/Hum
+        <i class="icon ion-arrow-right-c"></i>
 
+      </a>
 
-      <ion-list>
-        <div class="item item-divider">
-         Current Situation:
-          <i class="icon ion-android-happy"></i>
+      <a class="item item-icon-left item-icon-right" href="templates/p2.html">
+        <i class="icon ion-ios-rainy"></i>
 
-        </div>
+        Moisture 1
+        <i class="icon ion-arrow-right-c"></i>
 
-        <!--<ion-item menu-close ng-click="login()">-->
-        <a class="item item-icon-left item-icon-right" href="templates/p1.html">
-          <i class="icon ion-thermometer"></i>
+      </a>
 
-          Temp/Hum
-          <i class="icon ion-arrow-right-c"></i>
+      <a class="item item-icon-left item-icon-right" href="templates/p3.html">
+        <i class="icon ion-ios-rainy-outline"></i>
+        Moisture 2
+        <i class="icon ion-arrow-right-c"></i>
 
-        </a>
+      </a>
 
-        <a class="item item-icon-left item-icon-right" href="templates/p2.html">
-          <i class="icon ion-ios-rainy"></i>
+      <a class="item item-icon-left item-icon-right" href="templates/p4.html">
+        <i class="icon ion-android-sunny"></i>
+        Light
+        <i class="icon ion-arrow-right-c"></i>
 
-          Moisture 1
-          <i class="icon ion-arrow-right-c"></i>
+      </a>
 
-        </a>
 
-        <a class="item item-icon-left item-icon-right" href="templates/p3.html">
-          <i class="icon ion-ios-rainy-outline"></i>
-          Moisture 2
-          <i class="icon ion-arrow-right-c"></i>
+    </ion-list>
 
-        </a>
 
-        <a class="item item-icon-left item-icon-right" href="templates/p4.html">
-          <i class="icon ion-android-sunny"></i>
-          Light
-          <i class="icon ion-arrow-right-c"></i>
 
-        </a>
+  </ion-content>
 
 
-      </ion-list>
 
+</ion-view >
 
 
 
 
 
-      <!--<div class="att-m2x-widget" data-widget-url="https://api-m2x.att.com/v2/widgets/84b2a6c5" data-m2x-key="6a752e73306abe149a8c3c0afc31f41d"  style="position:absolute; left:100px; top:100px; "></div>-->
-      <!--<div class="att-m2x-widget" data-widget-url="https://api-m2x.att.com/v2/widgets/aab9cdf8" data-m2x-key="35b21968dbb350c1e92da0c119495491"  style="position:absolute; left:500px; top:100px; "></div>-->
-      <!--<div class="att-m2x-widget" data-widget-url="https://api-m2x.att.com/v2/widgets/9dfdc878" data-m2x-key="d6d73fc22be8d0e0449c212291259a39"  style="position:absolute; left:100px; top:600px; "></div>-->
-      <!--<div class="att-m2x-widget" data-widget-url="https://api-m2x.att.com/v2/widgets/ed12a2f9" data-m2x-key="bf4537595edc093cf91ce1c2195599a9"  style="position:absolute; left:500px; top:600px; "></div>-->
 
 
-
-      <!--<script src="https://m2x.att.com/widgets.js" async></script>-->
-
-
-
-
-      </div>
-
-
-
-
-
-
-
-
-
-
-    </ion-content>
-
-
-
-
-
-  </ion-side-menu-content>
-
-
-
-
-
-
-  <ion-side-menu expose-aside-when="large">
-    <ion-header-bar class="bar-royal">
-      <h1 class="title" >Left Menu</h1>
-    </ion-header-bar>
-    <ion-content class="has-header">
-      <ion-list>
-        <!--<ion-item menu-close ng-click="login()">-->
-        <ion-item menu-close href="templates/p1.html">
-
-        P1
-        </ion-item>
-        <ion-item menu-close href="templates/p2.html">
-          P2
-        </ion-item>
-        <ion-item menu-close href="templates/p3.html">
-          P3
-        </ion-item>
-        <ion-item menu-close href="templates/p4.html">
-          P4
-        </ion-item>
-      </ion-list>
-    </ion-content>
-  </ion-side-menu>
-
-</ion-side-menus>
-
-
-
-</body>
-</html>
-
-
-
-
-
-</ion-view>
-
-
-
-<!--</script>-->
-<!--<ion-view view-title="Dashboard">-->
-
-<!--<html >-->
-<!--<head>-->
-  <!--<meta charset="utf-8">-->
-  <!--<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">-->
-
-  <!--<title>Dash</title>-->
-
-  <!--<link href="//code.ionicframework.com/nightly/css/ionic.css" rel="stylesheet">-->
-  <!--<script src="//code.ionicframework.com/nightly/js/ionic.bundle.js"></script>-->
-
-<!--</head>-->
-
-<!--<body ng-controller="MainCtrl">-->
-
-<!--<ion-side-menus>-->
-
-  <!--<ion-side-menu-content>-->
-    <!--<ion-header-bar class="bar-positive">-->
-      <!--<button class="button button-icon ion-navicon" ng-click="toggleLeft()" ng-hide="$exposeAside.active"></button>-->
-      <!--<h1 class="title">Content</h1>-->
-    <!--</ion-header-bar>-->
-    <!--<ion-content class="padding">-->
-      <!--<p>-->
-        <!--On a small viewport (less than 768px window width), the left menu will be hidden, but can be shown by swiping left to right, or toggling the button in the top left of the header. On a large viewport (greater than or equal to 768px), the left menu will stay open.-->
-      <!--</p>-->
-      <!--<p>-->
-        <!--Using <code>large</code> as the attribute's value is an alias to <code>(min-width:768px)</code> since it is the most common use-case. However, for added flexibility, any valid media query could be added as the value, such as <code>(min-width:600px)</code> or even multiple queries such as <code>(min-width:750px) and (max-width:1200px)</code>.-->
-      <!--</p>-->
-    <!--</ion-content>-->
-  <!--</ion-side-menu-content>-->
-
-  <!--<ion-side-menu expose-aside-when="large">-->
-    <!--<ion-header-bar class="bar-royal">-->
-      <!--<h1 class="title">Left Menu</h1>-->
-    <!--</ion-header-bar>-->
-    <!--<ion-content>-->
-      <!--<div class="list">-->
-        <!--<div class="item">-->
-          <!--A few-->
-        <!--</div>-->
-        <!--<div class="item">-->
-          <!--of my-->
-        <!--</div>-->
-        <!--<div class="item">-->
-          <!--favorite-->
-        <!--</div>-->
-        <!--<div class="item">-->
-          <!--things-->
-        <!--</div>-->
-      <!--</div>-->
-    <!--</ion-content>-->
-  <!--</ion-side-menu>-->
-
-<!--</ion-side-menus>-->
-
-<!--</body>-->
-<!--</html>-->
-<!--</ion-view>-->
